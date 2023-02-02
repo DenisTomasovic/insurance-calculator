@@ -1,6 +1,8 @@
 # Getting Started
 
-This project was bootstrapped with [Mantine UI](https://mantine.dev/).
+This project was bootstrapped with [create-react-app](https://github.com/facebook/create-react-app).
+
+For React components was used [Mantine UI](https://mantine.dev/).
 
 ## Available Scripts
 
