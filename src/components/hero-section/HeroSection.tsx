@@ -3,7 +3,7 @@ import { useCallback, useState } from 'react'
 import { useHeroSectionStyles } from './HeroSection.styles'
 import HeroContent from './hero-content/HeroContent'
 import HeroForm from './hero-form/HeroForm'
-import InsuranceFlowContext from '../../context/insurance-flow/InsuranceFlowContext'
+import InsuranceFlowContext from '../../context/insurance-flow-context/InsuranceFlowContext'
 
 const HeroSection = () => {
     const { classes } = useHeroSectionStyles()

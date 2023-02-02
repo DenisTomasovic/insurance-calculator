@@ -1,13 +1,13 @@
-# Getting Started with Insurance App
+# Getting Started
 
 This project was bootstrapped with [Mantine UI](https://mantine.dev/).
 
 ## Available Scripts
 
-In the project directory, you can run:
-
+To Install all required dependencies in project directory run:
 ### `yarn install`
-Install all required dependencies
+
+Then run project with next command:
 
 ### `yarn start`
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

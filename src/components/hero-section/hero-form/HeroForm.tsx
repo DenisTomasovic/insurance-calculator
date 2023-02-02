@@ -1,16 +1,16 @@
 import { Box, Button, Stack } from '@mantine/core'
 import { InsuranceFormInput } from './HeroForm.types'
 import { SelectProps } from '../../input/select/Select.types'
-import { formValidationSchema } from '../../../validation/ValidationScheme'
-import { getAdditionalValue, getPackageValue, getPersonValue } from '../../../utils/CommonValidationUtils'
-import { getDayResult, getMaxStartDate, getMinEndDate } from '../../../utils/DateValidationUtils'
+import { formValidationScheme } from '../../../schemes/ValidationScheme'
+import { getAdditionalValue, getPackageValue, getPersonValue } from '../../../utils/CommonUtils'
+import { getDayResult, getMaxStartDate, getMinEndDate } from '../../../utils/DateUtils'
 import { useEffect, useState } from 'react'
 import { useForm, yupResolver } from '@mantine/form'
 import { useInsuranceFormStyles } from './HeroForm.styles'
 import DatePicker from '../../input/date-picker/DatePicker'
 import Select from '../../input/select/Select'
 import Toggle from '../../input/toggle/Toggle'
-import useInsuranceFlowContext from '../../../context/insurance-flow/useInsuranceFlowContext'
+import useInsuranceFlowContext from '../../../context/insurance-flow-context/useInsuranceFlowContext'
 
 const typeData: SelectProps = [
     { value: 'SHORT_TERM', label: 'Krátkodobé poistenie' },
@@ -52,7 +52,7 @@ const HeroForm = () => {
             insuranceAdditional: '',
             insurancePerson: 'ONE_PERSON'
         },
-        validate: yupResolver(formValidationSchema)
+        validate: yupResolver(formValidationScheme)
     })
 
     useEffect(() => {
